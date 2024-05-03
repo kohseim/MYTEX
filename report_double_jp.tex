@@ -1,0 +1,59 @@
+\documentclass[twocolumn]{ltjarticle}
+\usepackage[top=30truemm,bottom=25truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{graphicx,color}
+\usepackage{luatexja}
+\usepackage{authblk}
+\usepackage{titlesec}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+\pagestyle{empty}
+\setlength{\columnsep}{7mm}
+
+\title{\large タイトル}
+\author[1]{\normalsize 氏名}
+\affil[1]{\normalsize 所属}
+
+\renewcommand\Authsep{\qquad}
+\date{}
+
+\titleformat*{\section}{\large\bfseries} 
+\titleformat*{\subsection}{\normalsize\bfseries} 
+\titleformat*{\subsubsection}{\normalsize\bfseries} 
+
+\makeatletter
+\def\section{\@startsection {section}{1}{\z@}{2.5ex plus 1ex minus .2ex}{2.5ex plus .2ex}{\large\bf}} % セクションタイトルの後にスペースを追加
+\def\subsection{\@startsection {subsection}{1}{\z@}{2.5ex plus 1ex minus .2ex}{2.5ex plus .2ex}{\normalsize\bf}} % サブセクションタイトルの後にスペースを追加
+\makeatother
+
+\renewcommand{\normalsize}{\footnotesize} 
+\renewcommand{\small}{\scriptsize}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section{セクション１}
+ああああああああああああ
+
+\section{セクション２}
+いいいいいいいいいいいい
+
+\subsection{サブセクション２-１}
+いいいいいいいいいいいいい
+
+\subsection{サブセクション２-２}
+いいいいいいいいいいいいいい
+
+\section{セクション３}
+うううううううううううう
+\begin{itemize}
+\item アイテム１
+\item アイテム２
+\item アイテム３
+\end{itemize}
+
+\bibliographystyle{jplain}
+\bibliography{references} 
+
+\end{document}
